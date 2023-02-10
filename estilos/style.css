@@ -4,11 +4,10 @@
 *{
     padding: 0;
     margin: 0;
-    ;
+    box-sizing: border-box;
  }
 
-.container {
-  width: 100%;
+.container { 
   height: 100vh;
   background-image: linear-gradient(rgba(130, 134, 240, 0.676),rgba(0, 0, 0, 0.7)), url(../multimedia/inicio.jpg);
   background-position: center;
@@ -23,7 +22,6 @@
     display: flex;
     height: 90px;
     background-color: rgba(9, 9, 10, 0.194);
-    width: 100%;
 }   
 
 .logotipo {
@@ -64,12 +62,11 @@ nav {
     display: flex;
     align-items: center;
     height: 68%;
-    
+    padding-top: 130px;
 }
 
 .column {
     flex-basis: 50%;  
-    padding-top: 130px; 
 }
 
 .columna {
@@ -77,7 +74,6 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
-    padding-top: 130px; 
     margin-left: 40px;
 }
 
@@ -185,8 +181,7 @@ button, .button {
 
 .text {
     font-family: Playfair Display, serif;
-    margin-left: 600px;
-    position: relative;
+    height: 80vh;
 }
 
 .studio-presents1 {
@@ -196,27 +191,31 @@ button, .button {
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
     position: relative;
-    margin-bottom: 475px;
+    
 }
 
 
 .movie-title {
     color: rgb(40, 40, 40);
     font-size: 52px;
-    position: relative;
     display: inline-block;
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
-    position: relative;
     margin-top: 5px;
 }
 
 .text .img {
     width: 690px;
     height: 400px;
-    position: relative;
-    top: 0;
-    right: 0;
+    margin-top: 0px;
+}
+
+.new {
+   display: flex;
+   justify-content: flex-end;
+   height: 100%;
+   align-items: flex-end;
+   margin-right: 20px; 
 }
 
 .info {
