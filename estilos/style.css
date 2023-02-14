@@ -107,7 +107,7 @@ h2 {
     padding-left: 8%;
 }
 
-button, .button {
+button, .button, .adelbutton {
     width: 280px;
     height: 40px;
     color: rgb(0, 0, 0);
@@ -123,9 +123,9 @@ button, .button {
     transition: all 0.4s linear;
 }
 
-button, .button:hover {
+button, .button, .adelbutton:hover {
     color:rgb(255, 250, 234);
-    
+    background-color: rgb(229, 110, 31);
     transition: all 0.4s linear;
 }
 
