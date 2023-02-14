@@ -166,7 +166,6 @@ button, .button {
     background-color: rgb(40, 40, 40);
     width: 100%;
     height: 90px;
-    width: 100%;
     position: relative;
     font-family: Comfortaa, cursive;
 }
@@ -289,7 +288,7 @@ button, .button {
 .footer {
     background-color: rgb(40, 40, 40);
     height: 90px;
-    width: 1423px;
+    width: 100%;
     font-family: Comfortaa, cursive;
     color: rgba(255,250,234,1);
     display: flex;
@@ -330,7 +329,6 @@ h4 {
     position: relative;
     top: 0;
     right: 0;
-    margin-top: 225px;
 }
 
 /*estructura 2001*/
