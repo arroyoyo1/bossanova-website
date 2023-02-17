@@ -33,6 +33,10 @@
     margin-left: 20px;
 }    
 
+.animate__animated .animate__fadeIn  {
+    --animate-duration: 3s;
+}    
+
 .logotipo:hover {
     color: rgb(0, 30, 76);
     transition: all 0.2s linear;
@@ -62,6 +66,7 @@ nav {
     color:rgb(255, 252, 239);
     font-size: 14px;
     cursor: pointer;
+    transition: color 0.2s linear;
 }    
 
 .items, li, .anavbar:hover {
@@ -120,16 +125,19 @@ button, .adelbutton {
     cursor: pointer;
     font-family: Comfortaa, cursive;
     margin-left: 8%;
+    transition: all 0.4s linear;
 }
 
 .button 
 {
     color: rgb(0, 0, 0);
     font-size: 20px;
+    transition: all 0.4s linear;
 }
 
 .button:hover {
     color:rgb(255, 250, 234);
+    background-color: rgb(229, 110, 31) ;
     transition: all 0.4s linear;
 }
 
@@ -396,6 +404,91 @@ h4 {
     margin-bottom: 240px;
 }
 
+/*main mobile*/
 
+@media screen and (max-width:600px) {
 
+    .navbar {
+        align-items: center;
+        display: flex;
+        height: auto;
+        background-color: rgba(9, 9, 10, 0.194);
+    }   
+    
+    .logotipo {
+        cursor: pointer;
+        text-decoration: none;
+        color:rgb(255, 252, 239);
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 10px;
+    }    
 
+    .menu-icon {
+        width: 20px;
+        cursor: pointer;
+        margin-left: 40px;
+        margin-right: 20px;
+    }    
+
+    button, .adelbutton {
+        width: 140px;
+        height: 20px;
+        color: rgb(0, 0, 0);
+        font-size: 10px;
+        background-color: rgb(255, 250, 234);
+        border: 0px;
+        border-radius: 20px;
+        outline: none;
+        margin-top: 30px;
+        cursor: pointer;
+        font-family: Comfortaa, cursive;
+        margin-left: 8%;
+        transition: all 0.4s linear;
+    }
+
+    .first-verse {
+        display: flex;
+        flex-basis: 80%; 
+        font-size: 12px;
+        color:rgb(255, 252, 239); 
+        line-height: 20px; 
+        padding-right: 20px;
+        padding-left: 8%;
+    }
+
+    h2 {
+        font-size: 25px;
+        color:rgb(255, 252, 239);
+        padding-bottom: 8px;
+        padding-top: 13px;
+        padding-right: 8px;
+        padding-left: 8%;
+    }
+    
+    .movie-card {
+        width: 180px;
+        height: 200px;
+        display: inline-block;
+        border-radius: 30px;
+        padding: 3px 5px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 2px 4px;
+        background-position: center bottom;
+        background-size: cover;
+        transition: transform 0.5s;
+     }
+
+     .card2 {
+        background-position: center;
+     } 
+
+     .card1 {
+        background-position: center;
+     }
+
+     .menu-icon {
+       display: none;
+    }   
+}
