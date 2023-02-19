@@ -74,6 +74,27 @@ nav {
    transition: all 0.2s linear;
 }    
 
+.items, li, .anavbar1:hover {
+    color: rgb(159, 64, 38);
+    transition: all 0.2s linear;
+ }  
+
+ .items, li, .anavbar2:hover {
+    color: rgb(231, 245, 43);
+    transition: all 0.2s linear;
+ }  
+
+ .items, li, .anavbar3:hover {
+    color: rgb(61, 213, 216);
+    transition: all 0.2s linear;
+ }  
+
+ .items, li, .anavbar4:hover {
+    color: rgb(237, 77, 18);
+    transition: all 0.2s linear;
+ } 
+   
+
 .row1 {
     display: flex;
     align-items: center;
@@ -561,7 +582,7 @@ h4 {
     font-size: 14px;
     color: rgba(255,250,234,1);
     margin-left: 45px;
-    text-align: justify;
+    text-align: center;
  } 
 
  .blockquote-footer {
@@ -627,6 +648,10 @@ h4 {
         width:  360px;
         height: 203px;
         margin-left: 50px;
+     }  
+
+     .blockquote {
+        text-align: justify;
      }  
 
      .cuadrado{
