@@ -200,7 +200,6 @@ button:hover, .adelbutton:hover {
     height: 90px;
     background-color: rgb(40, 40, 40);
     width: 100%;
-    height: 90px;
     position: relative;
     font-family: Comfortaa, cursive;
 }
@@ -414,21 +413,26 @@ h4 {
         height: auto;
         background-color: rgba(9, 9, 10, 0.194);
     }   
-    
-    .logotipo {
-        cursor: pointer;
-        text-decoration: none;
-        color:rgb(255, 252, 239);
-        font-weight: bold;
-        font-size: 20px;
-        margin-left: 10px;
-    }    
 
     .menu-icon {
         width: 20px;
         cursor: pointer;
         margin-left: 40px;
         margin-right: 20px;
+    }    
+
+    .column {
+        flex-basis: 100%; 
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-bottom: 410px;
+    }    
+
+    
+     .button, .adelbutton {
+        text-align: center;
+        padding-right: 34.5px ; 
     }    
 
     button, .adelbutton {
@@ -443,7 +447,7 @@ h4 {
         margin-top: 8px;
         cursor: pointer;
         font-family: Comfortaa, cursive;
-        margin-left: 8%;
+        margin-left: 33%;
         transition: all 0.4s linear;
     }
 
@@ -455,32 +459,30 @@ h4 {
         line-height: 20px; 
         padding-right: 20px;
         padding-left: 8%;
+        text-align: center;
     }
 
     h2 {
-        font-size: 25px;
+        font-size: 60px;
         color:rgb(255, 252, 239);
         padding-bottom: 8px;
         padding-top: 13px;
         padding-right: 8px;
         padding-left: 8%;
-    }
-
-    .column {
-        flex-basis: 100%;  
+        text-align:center;
     }
 
     .columna {
         flex-basis: 100%;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap; 
         margin-left: 10px;
+        padding-top: 300px;
     }
     
     .movie-card {
-        width: 180px;
-        height: 200px;
+        width: 200px;
+        height: 230px;
         display: flex;
         flex-direction: column;
         border-radius: 30px;
@@ -491,6 +493,11 @@ h4 {
         background-position: center bottom;
         background-size: cover;
         transition: transform 0.5s;
+        margin-left: 42%;
+     }
+
+     .card1 {
+        margin-top: 570px;
      }
 
      .card2 {
@@ -504,6 +511,23 @@ h4 {
      .menu-icon {
        display: none;
     }   
+
+    .navbar {
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start ;
+        display: flex;
+        height: 110px;
+        width: 100%;
+        position: relative;
+    }
+
+    .container { 
+        height: 100vh;
+        background-image: linear-gradient(rgba(130, 134, 240, 0.676),rgba(0, 0, 0, 0.7)), url(../multimedia/inicio.jpg);
+        background-position: center;
+        background-size: repeat;
+      }
 }
 
 .flex-father {
@@ -536,6 +560,8 @@ h4 {
     font-family: Comfortaa, cursive;
     font-size: 14px;
     color: rgba(255,250,234,1);
+    margin-left: 45px;
+    text-align: justify;
  } 
 
  .blockquote-footer {
@@ -543,7 +569,8 @@ h4 {
     font-family: Comfortaa, cursive;
     font-size: 10px;
     padding-top: 10px;
-    color: rgba(255,250,234,1);;
+    color: rgba(255,250,234,1);
+    margin-left: 45px;
  }
 
 .cuadrado:last-child {
@@ -593,18 +620,23 @@ h4 {
     margin-bottom: 20px;
  }  
 
-/*main the beauty of cinema*/
+/*main the beauty of cinema y header secundario mobile*/
 
  @media screen and (max-width:600px) {
     .video {
         width:  360px;
         height: 203px;
+        margin-left: 50px;
      }  
 
      .cuadrado{
-        margin-top: 35px;
+        margin-top: 65px;
         width: 15px;
         height: 15px;
+     }  
+
+     .cuadrado:first-child{
+        margin-left: 25px;
      }  
 
      .flex-father {
@@ -620,6 +652,7 @@ h4 {
         font-size: 12px;
         text-align: center;
         flex-direction: row;
+        width: 390px;
      } 
 
      .flow, .copy {
@@ -628,4 +661,76 @@ h4 {
         margin-right: 20px;
         margin-top: 20px;
      } 
+
+     .navbar__secondary {
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start ;
+        display: flex;
+        height: 90px;
+        background-color: rgb(40, 40, 40);
+        width: 100%;
+    }
+
+    nav {
+        flex: 1;
+        text-align: center;
+    }    
+    
+    .items, li {
+        list-style: none;
+        display: inline-block;
+        margin-bottom: 10px;
+    }    
+
+    .navbar {
+        align-items: center;
+        display: flex;
+        height: 120px;
+        width: auto;
+        background-color: rgba(9, 9, 10, 0.194);
+        padding-bottom: 50px;
+    }   
+
+    .logotipo {
+        cursor: pointer;
+        text-decoration: none;
+        color:rgb(255, 252, 239);
+        font-weight: bold;
+        font-size: 40px;
+        margin-left: 3px;
+        margin-top: 10px;
+    }    
+
+    .mobile {
+        display: flex;
+        flex-direction: row; 
+        position: absolute;  
+    }  
  }
+
+ .logotipo1:hover {
+    color: rgb(159, 64, 38);
+    transition: all 0.2s linear;
+}    
+
+.logotipo2:hover {
+    color: rgb(231, 245, 43);
+    transition: all 0.2s linear;
+}   
+
+.logotipo3:hover {
+    color: rgb(61, 213, 216);
+    transition: all 0.2s linear;
+}   
+
+.logotipo4:hover {
+    color: rgb(237, 77, 18);
+    transition: all 0.2s linear;
+}   
+
+.logotipo5:hover {
+    color: rgb(0, 0, 0);
+    transition: all 0.2s linear;
+}   
+
