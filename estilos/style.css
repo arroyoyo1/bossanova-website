@@ -56,7 +56,6 @@ nav {
 }    
 
 .items, li {
-    margin-left: 10px;
     list-style: none;
     display: inline-block;
 }    
@@ -99,11 +98,6 @@ nav {
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-.column { 
-    display: flex;
-    justify-items: center;
 }
 
 .columna {
@@ -217,7 +211,7 @@ button:hover, .adelbutton:hover {
 .navbar__secondary {
     align-items: center;
     display: flex;
-    height: 90px;
+ 
     background-color: rgb(40, 40, 40);
     width: 100%;
     position: relative;
@@ -424,17 +418,8 @@ h4 {
 @media screen and (max-width:576px) {
 
     .navbar {
-        align-items: center;
-        display: flex;
         height: auto;
         background-color: rgba(9, 9, 10, 0.194);
-    }   
-
-    .menu-icon {
-        width: 20px;
-        cursor: pointer;
-        margin-left: 40px;
-        margin-right: 20px;
     }    
 
     .column {
@@ -442,6 +427,7 @@ h4 {
         display: flex;
         flex-direction: column; 
         margin-bottom: 30px;
+        align-items: center;
     }     
 
     button, .adelbutton {
@@ -470,9 +456,8 @@ h4 {
     }
     
     .movie-card {
-        width: 200px;
-        height: 230px;
-        border-radius: 30px;
+        width: 240px;
+        height: 290px;
      }
 
      .card2 {
@@ -530,29 +515,21 @@ h4 {
 
  .blockquote {
     margin-top: 50px;
-    text-align: center;
+    text-align: justify;
     font-family: Comfortaa, cursive;
     font-size: 14px;
     color: rgba(255,250,234,1);
-    margin-left: 45px;
-    text-align: center;
  } 
 
  .blockquote-footer {
-    text-align: center;
+    text-align: justify;
     font-family: Comfortaa, cursive;
     font-size: 10px;
     padding-top: 10px;
     color: rgba(255,250,234,1);
-    margin-left: 45px;
  }
 
-.cuadrado:last-child {
-    margin-right: 45px;
- }   
-
  .cuadrado{
-    margin-top: 45px;
     width: 25px;
     height: 25px;
  }   
@@ -600,37 +577,24 @@ h4 {
     .video {
         width:  360px;
         height: 203px;
-        margin-left: 50px;
-     }  
-
-     .blockquote {
-        text-align: justify;
      }  
 
      .cuadrado{
-        margin-top: 65px;
         width: 15px;
         height: 15px;
-     }  
-
-     .cuadrado:first-child{
-        margin-left: 25px;
+        margin-top: 10px;
      }  
 
      .flex-father {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
         align-items: top;
         justify-content: center;
-        margin-left: 30px;
+        flex-direction: row;
      } 
 
      .footer {
         font-size: 12px;
         text-align: center;
         flex-direction: row;
-        width: 390px;
      } 
 
      .flow, .copy {
@@ -641,13 +605,8 @@ h4 {
      } 
 
      .navbar__secondary {
-        align-items: center;
         flex-direction: column;
         justify-content: flex-start ;
-        display: flex;
-        height: 90px;
-        background-color: rgb(40, 40, 40);
-        width: 100%;
     }
 
     nav {
@@ -671,12 +630,8 @@ h4 {
     }   
 
     .logotipo {
-        cursor: pointer;
-        text-decoration: none;
-        color:rgb(255, 252, 239);
         font-weight: bold;
         font-size: 40px;
-        margin-left: 3px;
         margin-top: 10px;
     }    
 
