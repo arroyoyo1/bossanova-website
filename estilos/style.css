@@ -14,6 +14,7 @@
   background-size: cover;
   box-sizing: border-box;
   font-family: Comfortaa, cursive;
+  height: 100vh;
 }
 
 /*header principal*/
@@ -142,8 +143,12 @@ button, .adelbutton {
     transition: all 0.4s linear;
 }
 
-.button 
-{
+.sangria {
+    margin-left: 110px;
+}
+
+
+.button {
     color: rgb(0, 0, 0);
     font-size: 20px;
     transition: all 0.4s linear;
@@ -173,6 +178,7 @@ button:hover, .adelbutton:hover {
    background-position: center bottom;
    background-size: cover;
    transition: transform 0.5s;
+   margin-top: 30px;
 }
 
 .card1 {
@@ -458,6 +464,7 @@ h4 {
     .movie-card {
         width: 240px;
         height: 290px;
+        margin-top: 0px;
      }
 
      .card2 {
@@ -486,6 +493,11 @@ h4 {
         background-image: linear-gradient(rgba(130, 134, 240, 0.676),rgba(0, 0, 0, 0.7)), url(../multimedia/inicio.jpg);
         background-position: center;
         background-size: repeat;
+        height: auto;
+      }
+
+    .sangria { 
+        margin-left: 0px;
       }
 }
 
@@ -495,6 +507,11 @@ h4 {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    margin-top: 20px;
+ } 
+
+ .flex-father:last-child {
+    margin-right: 20px;
  } 
 
  .flex-father2 {
